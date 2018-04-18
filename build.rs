@@ -12,7 +12,7 @@ fn main(){
         // netbsd claims dl* will be available to any dynamically linked binary, but I haven’t
         // found any libraries that have to be linked to on other platforms.
         // What happens if the executable is not linked up dynamically?
-        Ok("openbsd") | Ok("bitrig") | Ok("netbsd") | Ok("macos") | Ok("ios") => {}
+        Ok("openbsd") | Ok("bitrig") | Ok("netbsd") | Ok("macos") | Ok("darwin") | Ok("ios") => {}
         Ok("solaris") => {}
         // dependencies come with winapi
         Ok("windows") => {}
